@@ -104,7 +104,6 @@ class Player
 		choice = self.chos_actions
 		
 		case choice.to_i
-		
 		when 1
 			if @mP >= 30
 				self.use_spell
