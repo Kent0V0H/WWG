@@ -1,4 +1,4 @@
-#K
+#KWVH
 
 load "Game.rb"
 
