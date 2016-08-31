@@ -104,9 +104,15 @@ class Player
 		choice = self.chos_actions
 		
 		case choice.to_i
+		
 		when 1
-			self.use_spell
-			puts "\t\t#@damage pts of damage!\n"
+			if @mP >= 30
+				self.use_spell
+				puts "\t\t#@damage pts of damage!\n"
+			else
+				puts "\t\tMP is too low!"
+				puts "\t\t#@damage pts of damage!\n"
+			end
 		when 2
 			self.use_sword
 			puts "\t\t#@damage pts of damage!\n"
